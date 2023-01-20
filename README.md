@@ -4,9 +4,8 @@
   <br>
   Calculator
   <br>
+  <h4 align="center">Calculator using <a href="https://uk.reactjs.org/" target="_blank">React.js</a>
 </h1>
-
-<h4 align="center">Calculator using <a href="https://uk.reactjs.org/" target="_blank">React.js</a>
 
 <img width="500" alt="Screenshot 2023-01-20 at 22 19 29" src="https://user-images.githubusercontent.com/84936189/213798173-99dea6b7-107b-4743-bacd-8b0a8211c242.png">
 
