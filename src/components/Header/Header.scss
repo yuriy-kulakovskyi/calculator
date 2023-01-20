@@ -1,0 +1,16 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+.header {
+  padding: 10px 0;
+  background-color: $themeColor;
+  color: $textColor;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+
+  &__content {
+    width: 100%;
+    @include flexSpaceBetween();
+  }
+}

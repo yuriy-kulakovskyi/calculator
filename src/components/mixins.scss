@@ -1,0 +1,29 @@
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexCenterAlignEnd {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@mixin flexEnd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@mixin font {
+  font-size: 18px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+}

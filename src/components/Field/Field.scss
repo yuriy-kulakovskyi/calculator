@@ -1,0 +1,46 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.field {
+  width: 100%; min-height: 50vh;
+  background-color: $themeColor;
+  @include flexEnd();
+
+  .field__container {
+    width: 100%;
+    @include flexEnd();
+    flex-direction: column;
+    padding: 0 10px 45px 0;
+  }
+
+  &__calculation {
+    background-color: transparent;
+    border: none;
+    color: $textColor;
+    @include font();
+    font-size: 45px;
+    text-align: right;
+    user-select: none;
+    transition: .2s;
+    display: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__result {
+    color: #dcdcdc;
+    @include font();
+    font-size: 30px;
+    opacity: .5;
+    display: none;
+    transition: .2s;
+  }
+
+  &__zero {
+    color: #fff;
+    @include font();
+    font-size: 45px;
+  }
+}

@@ -1,0 +1,6 @@
+@import '../../mixins.scss';
+
+.status {
+  @include flexCenterAlignEnd();
+  gap: 10px;
+}

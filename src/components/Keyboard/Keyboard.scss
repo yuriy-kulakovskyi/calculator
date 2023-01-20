@@ -1,0 +1,50 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.keyboard {
+  width: 100%;
+  background-color: $keyboardColor;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  @include flexCenter();
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 50px 15px;
+
+    &__button {
+      padding: 25px;
+      cursor: pointer;
+      background-color: rgb(40, 43, 50);
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 0 3px rgba(255, 255, 255, .2);
+      @include font();
+      color: #fff;
+
+      &:hover {
+        text-shadow: 0 0 20px #fff;
+        opacity: .7;
+      }
+    }
+
+    .aqua {
+      color: rgb(88, 185, 224);
+
+      &:hover {
+        text-shadow: 0 0 20px rgb(88, 185, 224);
+      }
+    }
+
+    .red {
+      color: rgb(210, 50, 90);
+      font-size: 20px;
+
+      &:hover {
+        text-shadow: 0 0 20px rgb(236, 58, 102);
+      }
+    }
+  }
+}
